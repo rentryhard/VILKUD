@@ -1,0 +1,65 @@
+/* Background video */
+#bg-video {
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    min-width: 100vw; 
+    min-height: 100vh;
+    width: auto;      
+    height: auto;    
+    object-fit: cover; 
+    
+   
+    z-index: -100; 
+}
+
+.hero-container {
+    position: relative; 
+    height: 100vh; 
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Overlay konten */
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 90%;         
+}
+
+/* Heading utama */
+.hero-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Paragraf */
+.hero-overlay p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+/* Tombol */
+.hero-buttons a {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 0 8px;          
+}
+
+/* Navbar logo styling */
+.navbar img {
+    border-radius: 50%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    overflow-x: hidden;
+}
