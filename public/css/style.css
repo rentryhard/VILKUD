@@ -1,22 +1,22 @@
 /* Background video */
 #bg-video {
-    position: fixed; 
+    position: fixed;
     top: 0;
-    left: 0; 
-    min-width: 100vw; 
+    left: 0;
+    min-width: 100vw;
     min-height: 100vh;
-    width: auto;      
-    height: auto;    
-    object-fit: cover; 
-    
-   
-    z-index: -100; 
+    width: auto;
+    height: auto;
+    object-fit: cover;
+
+
+    z-index: -100;
 }
 
 .hero-container {
-    position: relative; 
-    height: 100vh; 
-    width: 100%; 
+    position: relative;
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 40px;
     border-radius: 10px;
-    max-width: 90%;         
+    max-width: 90%;
 }
 
 /* Heading utama */
@@ -49,7 +49,7 @@
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 8px;
-    margin: 0 8px;          
+    margin: 0 8px;
 }
 
 /* Navbar logo styling */
@@ -57,9 +57,128 @@
     border-radius: 50%;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    height: 100%; 
+    height: 100%;
     overflow-x: hidden;
+}
+
+.bg-brown {
+    background-color: #34343474 !important;
+    /* Ganti dengan kode warna coklat pilihan Anda */
+}
+
+/*untuk halaman login*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+
+/* Glass card */
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 2rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.06);
+    /* transparan */
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+    backdrop-filter: blur(8px) saturate(120%);
+    -webkit-backdrop-filter: blur(8px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #f5f7fa;
+}
+
+
+.brand {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.4px;
+}
+
+
+label {
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    margin-top: 0.4rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+    color: #fff;
+    outline: none;
+}
+
+
+input:focus {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 16px rgba(10, 10, 30, 0.25);
+}
+
+
+.remember-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+}
+
+
+.btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.85rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    color: #fff;
+}
+
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.small {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    text-align: center;
+    opacity: 0.85;
+}
+
+
+.error {
+    background: rgba(255, 50, 50, 0.08);
+    border: 1px solid rgba(255, 50, 50, 0.12);
+    padding: 0.6rem;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    color: #ffdede
+}
+
+
+/* Responsive */
+@media (max-width:480px) {
+    .login-card {
+        padding: 1.25rem;
+        border-radius: 12px
+    }
 }
